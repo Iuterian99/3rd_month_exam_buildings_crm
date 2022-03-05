@@ -1,7 +1,7 @@
 const connection = {
-  connectionString: "postgres://postgres:abdu1882@localhost:5432/basics",
+  connectionString: "postgres://postgres:abdu1882@localhost:5432/buildings",
   connectionElString:
-    "postgres://ncqesohp:gU1FgS9FPwWlaCvk9NK_0_OG7WKOhwg5@jelani.db.elephantsql.com/ncqesohp",
+    "postgres://egcsmzpn:VGZJZWKARTlHlkD5vDctE4bgJWiacGVw@jelani.db.elephantsql.com/egcsmzpn",
 };
 
 module.exports = {

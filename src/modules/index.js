@@ -2,9 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-const Users = require("./users/users");
+const Companies = require("./building_companies/companies");
 
-router.get("/", Users.Users).get("/users/:id", Users.GET_BY_ID);
-router.put("put", Users.UpdateUsers);
+router.get("/", Companies.allCompanies);
 
 module.exports = router;
