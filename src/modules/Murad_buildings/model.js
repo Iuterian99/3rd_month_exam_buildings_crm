@@ -1,11 +1,14 @@
-const PG = require("../../lib/postgres");
+const { fetch, fetchAll } = require("../../lib/postgres");
 
-class murad_buildings extends PG {
-  getAll() {
-    return this.fetchAll(
-      `
-      SELECT *
-      `
-    );
-  }
-}
+const allMuradBuildings = `
+SELECT 
+  *
+FROM 
+murad_buildings
+`;
+
+const MuradBuildings = () => fetchAll(allMuradBuildings);
+
+module.exports = {
+  MuradBuildings,
+};
