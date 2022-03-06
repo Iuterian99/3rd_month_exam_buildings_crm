@@ -1,12 +1,12 @@
-INSERT INTO building_companies(building_company_name) VALUES('Murad Buildings');
-INSERT INTO building_companies(building_company_name) VALUES('Golden House');
-INSERT INTO building_companies(building_company_name) VALUES('Akay City');
+INSERT INTO building_companies(company_name) VALUES('Murad Buildings');
+INSERT INTO building_companies(company_name) VALUES('Golden House');
+INSERT INTO building_companies(company_name) VALUES('Akay City');
 
-INSERT INTO murad_buildings_NestOne(nestOne_house_name, NestOne_house_price, nestone_of) 
-VALUES('11-20 ETAJLAR', 1400, '3e11a2ce-a49d-4467-87a3-56a65536309d'),
-      ('21-30 ETAJLAR', 1300, '3e11a2ce-a49d-4467-87a3-56a65536309d'),
-      ('31-40 ETAJLAR', 1200, '3e11a2ce-a49d-4467-87a3-56a65536309d'),
-      ('41-52 ETAJLAR', 1100, '3e11a2ce-a49d-4467-87a3-56a65536309d');
+INSERT INTO murad_buildings_NestOne(house_name, house_price, house_of) 
+VALUES('11-20 ETAJLAR', 1400, 'd65d48ee-cc7b-4a61-b659-48a4ccd374be'),
+      ('21-30 ETAJLAR', 1300, 'd65d48ee-cc7b-4a61-b659-48a4ccd374be'),
+      ('31-40 ETAJLAR', 1200, 'd65d48ee-cc7b-4a61-b659-48a4ccd374be'),
+      ('41-52 ETAJLAR', 1100, 'd65d48ee-cc7b-4a61-b659-48a4ccd374be');
 
 INSERT INTO murad_buildings_millenium(millenium_house_name, millenium_house_price, millenium_of) 
 VALUES('1-2 ETAJLAR', 1000, '3e11a2ce-a49d-4467-87a3-56a65536309d'),

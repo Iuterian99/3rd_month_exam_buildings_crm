@@ -2,20 +2,31 @@ CREATE DATABASE buildings;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE building_companies (
-  building_company_id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
-  building_company_name varchar(50) NOT NULL
+  company_id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
+  company_name varchar(50) NOT NULL
 );
 
 CREATE TABLE murad_buildings_NestOne (
-  nestOne_id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
-  nestOne_house_name varchar(50) NOT NULL,
-  NestOne_house_price decimal(10, 2) NOT NULL,
-  NestOne_house_started_at timestampTz DEFAULT CURRENT_TIMESTAMP,
-  nestone_of uuid,
-    FOREIGN KEY(nestone_of)
-    REFERENCES building_companies(building_company_id)
+  house_id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
+  house_name varchar(50) NOT NULL,
+  house_price decimal(10, 2) NOT NULL,
+  house_started_at timestampTz DEFAULT CURRENT_TIMESTAMP,
+  company_id uuid NOT NULL,
+    FOREIGN KEY(company_id)
+    REFERENCES building_companies(company_id)
     ON DELETE CASCADE
 );
+
+SELECT 
+  house_name 
+FROM
+  murad_buildings_NestOne b
+INNER JOIN
+  murad_buildings_NestOne n
+ON 
+  b.building_company_id = n.nestone_of
+GROUP BY building_company_name;
+
 
 CREATE TABLE murad_buildings_millenium (
   millenium_id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
@@ -71,4 +82,5 @@ CREATE TABLE akay_city_yunusobod (
     REFERENCES building_companies(building_company_id)
     ON DELETE CASCADE
 );
+
 
