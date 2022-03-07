@@ -1,7 +1,7 @@
 const model = require("./model");
 
 module.exports = {
-  allCompanies: async (req, res) => {
+  allCompanies: async (_, res) => {
     try {
       res.send(await model.getCompanies());
     } catch (e) {

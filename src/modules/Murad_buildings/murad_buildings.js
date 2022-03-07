@@ -10,7 +10,6 @@ module.exports = {
         });
       } else {
         res.json({
-          status: 200,
           data: await model.MuradBuildings(),
         });
       }
