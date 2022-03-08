@@ -18,7 +18,7 @@ class Users extends PG {
             FROM
                 building_companies
             WHERE
-                building_company_id = $1
+                company_id = $1
         `,
       id
     );

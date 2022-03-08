@@ -9,9 +9,7 @@ module.exports = {
           message: "Buildings not found",
         });
       }
-      res.json({
-        data: await model.AkayCityBuildings(),
-      });
+      res.send(await model.AkayCityBuildings());
     } catch (err) {
       console.log(err.message);
       res.json({
