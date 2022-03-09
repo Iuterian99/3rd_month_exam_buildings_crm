@@ -1,4 +1,4 @@
-CREATE DATABASE buildings;
+CREATE DATABASE wrebzgbz;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE building_companies (

@@ -3,61 +3,57 @@ INSERT INTO building_companies(company_name) VALUES('Golden House');
 INSERT INTO building_companies(company_name) VALUES('Akay City');
 
 INSERT INTO building_complexes(complex_name, complex_location, company_id) 
-VALUES('Nest One', 'Xalqlar do`stligi', '03c40796-be29-47ee-b509-2d4f4b419d1d'),
-      ('Millenium', 'Yunusobod', '03c40796-be29-47ee-b509-2d4f4b419d1d'),
-      ('Sag`bon', 'Yashnabod', '0a5e9d04-35b0-4e3d-9ad9-9e1ebe831b5b'),
-      ('Xosiyat', 'Yashnabod', '0a5e9d04-35b0-4e3d-9ad9-9e1ebe831b5b'),
-      ('Manzara', 'Mirzo Ulug`bek', '2212b22e-309f-4962-8b6b-ac63c53c586f'),
-      ('Olmazor City', 'Olmazor', '2212b22e-309f-4962-8b6b-ac63c53c586f');
+VALUES('Nest One', 'Xalqlar do`stligi', '46cf2ede-5222-4168-b547-f168206ebb43'),
+      ('Millenium', 'Yunusobod', '46cf2ede-5222-4168-b547-f168206ebb43'),
+      ('Sag`bon', 'Yashnabod', 'ff38f50f-e697-478b-b3db-03d368e3ed05'),
+      ('Xosiyat', 'Yashnabod', 'ff38f50f-e697-478b-b3db-03d368e3ed05'),
+      ('Manzara', 'Mirzo Ulug`bek', 'f6ede6a4-9064-4edb-bccf-d8aa4dac25ce'),
+      ('Olmazor City', 'Olmazor', 'f6ede6a4-9064-4edb-bccf-d8aa4dac25ce');
       
+-- ------------------------------------------------------------------------------------
+INSERT INTO complex_houses(house_name, house_price, company_id) 
+VALUES('1-10 ETAJLAR', 1500, 'bd3d94f2-dc11-42e2-9c26-8ea85b78527c'),
+      ('11-20 ETAJLAR', 1400, 'bd3d94f2-dc11-42e2-9c26-8ea85b78527c'),
+      ('21-30 ETAJLAR', 1300, 'bd3d94f2-dc11-42e2-9c26-8ea85b78527c'),
+      ('31-40 ETAJLAR', 1200, 'bd3d94f2-dc11-42e2-9c26-8ea85b78527c'),
+      ('41-52 ETAJLAR', 1100, 'bd3d94f2-dc11-42e2-9c26-8ea85b78527c');
 
 INSERT INTO complex_houses(house_name, house_price, company_id) 
-VALUES('1-10 ETAJLAR', 1500, '0ae36b73-ed16-403f-92f3-f491d7438291'),
-      ('11-20 ETAJLAR', 1400, '0ae36b73-ed16-403f-92f3-f491d7438291'),
-      ('21-30 ETAJLAR', 1300, '0ae36b73-ed16-403f-92f3-f491d7438291'),
-      ('31-40 ETAJLAR', 1200, '0ae36b73-ed16-403f-92f3-f491d7438291'),
-      ('41-52 ETAJLAR', 1100, '0ae36b73-ed16-403f-92f3-f491d7438291');
+VALUES('1-2 ETAJLAR', 1200, 'fa9031db-7e4b-4d29-9056-796cfec306a6'),
+      ('3-5 ETAJLAR', 1100, 'fa9031db-7e4b-4d29-9056-796cfec306a6'),
+      ('5-7 ETAJLAR', 1000, 'fa9031db-7e4b-4d29-9056-796cfec306a6'),
+      ('7-9 ETAJLAR', 900, 'fa9031db-7e4b-4d29-9056-796cfec306a6');
 
 INSERT INTO complex_houses(house_name, house_price, company_id) 
-VALUES('1-2 ETAJLAR', 1200, '8a312709-a7c5-42c5-90c4-9ce400e34887'),
-      ('3-5 ETAJLAR', 1100, '8a312709-a7c5-42c5-90c4-9ce400e34887'),
-      ('5-7 ETAJLAR', 1000, '8a312709-a7c5-42c5-90c4-9ce400e34887'),
-      ('7-9 ETAJLAR', 900, '8a312709-a7c5-42c5-90c4-9ce400e34887');
-
-INSERT INTO complex_houses(house_name, house_price, company_id) 
-VALUES('1-2 ETAJLAR', 1000, '12d75793-779c-4e52-b184-3b2578c1457f'),
-      ('3-5 ETAJLAR', 900, '12d75793-779c-4e52-b184-3b2578c1457f'),
-      ('5-7 ETAJLAR', 850, '12d75793-779c-4e52-b184-3b2578c1457f'),
-      ('7-9 ETAJLAR', 800, '12d75793-779c-4e52-b184-3b2578c1457f');
+VALUES('1-2 ETAJLAR', 1000, '4e4a17db-d78a-4983-bd25-c74b1f3718ab'),
+      ('3-5 ETAJLAR', 900, '4e4a17db-d78a-4983-bd25-c74b1f3718ab'),
+      ('5-7 ETAJLAR', 850, '4e4a17db-d78a-4983-bd25-c74b1f3718ab'),
+      ('7-9 ETAJLAR', 800, '4e4a17db-d78a-4983-bd25-c74b1f3718ab');
 
 INSERT INTO  complex_houses(house_name, house_price, company_id) 
-VALUES('1-2 ETAJLAR', 900, '1806708a-b8ec-4c16-a29c-c73302f4b7c1'),
-      ('3-5 ETAJLAR', 800, '1806708a-b8ec-4c16-a29c-c73302f4b7c1'),
-      ('5-7 ETAJLAR', 750, '1806708a-b8ec-4c16-a29c-c73302f4b7c1'),
-      ('7-9 ETAJLAR', 650, '1806708a-b8ec-4c16-a29c-c73302f4b7c1');
+VALUES('1-2 ETAJLAR', 900, '94ae9328-4fc2-42da-a5ec-6f3405ecc898'),
+      ('3-5 ETAJLAR', 800, '94ae9328-4fc2-42da-a5ec-6f3405ecc898'),
+      ('5-7 ETAJLAR', 750, '94ae9328-4fc2-42da-a5ec-6f3405ecc898'),
+      ('7-9 ETAJLAR', 650, '94ae9328-4fc2-42da-a5ec-6f3405ecc898');
 
 INSERT INTO  complex_houses(house_name, house_price, company_id)
-VALUES('1-2 ETAJLAR', 900, 'b1b7e453-61e7-4af4-91aa-f2488e6ef670'),
-      ('3-5 ETAJLAR', 800, 'b1b7e453-61e7-4af4-91aa-f2488e6ef670'),
-      ('5-7 ETAJLAR', 750, 'b1b7e453-61e7-4af4-91aa-f2488e6ef670'),
-      ('7-9 ETAJLAR', 650, 'b1b7e453-61e7-4af4-91aa-f2488e6ef670'),
-      ('10-12 ETAJLAR', 630, 'b1b7e453-61e7-4af4-91aa-f2488e6ef670'),
-      ('13-15 ETAJLAR', 600, 'b1b7e453-61e7-4af4-91aa-f2488e6ef670');
+VALUES('1-2 ETAJLAR', 900, '050b8495-01f7-4eaf-abd8-44d63d9dd67d'),
+      ('3-5 ETAJLAR', 800, '050b8495-01f7-4eaf-abd8-44d63d9dd67d'),
+      ('5-7 ETAJLAR', 750, '050b8495-01f7-4eaf-abd8-44d63d9dd67d'),
+      ('7-9 ETAJLAR', 650, '050b8495-01f7-4eaf-abd8-44d63d9dd67d'),
+      ('10-12 ETAJLAR', 630, '050b8495-01f7-4eaf-abd8-44d63d9dd67d'),
+      ('13-15 ETAJLAR', 600, '050b8495-01f7-4eaf-abd8-44d63d9dd67d');
 
 INSERT INTO  complex_houses(house_name, house_price, company_id) 
-VALUES('1-2 ETAJLAR', 1000, '2e97da28-af55-4ee9-b598-a5ac9c48cf9d'),
-      ('3-5 ETAJLAR', 900, '2e97da28-af55-4ee9-b598-a5ac9c48cf9d'),
-      ('5-7 ETAJLAR', 850, '2e97da28-af55-4ee9-b598-a5ac9c48cf9d'),
-      ('7-9 ETAJLAR', 750, '2e97da28-af55-4ee9-b598-a5ac9c48cf9d'),
-      ('10-12 ETAJLAR', 700, '2e97da28-af55-4ee9-b598-a5ac9c48cf9d'),
-      ('13-15 ETAJLAR', 650, '2e97da28-af55-4ee9-b598-a5ac9c48cf9d');
+VALUES('1-2 ETAJLAR', 1000, 'b0fe296e-750a-42ba-8fb4-c023fd306e73'),
+      ('3-5 ETAJLAR', 900, 'b0fe296e-750a-42ba-8fb4-c023fd306e73'),
+      ('5-7 ETAJLAR', 850, 'b0fe296e-750a-42ba-8fb4-c023fd306e73'),
+      ('7-9 ETAJLAR', 750, 'b0fe296e-750a-42ba-8fb4-c023fd306e73'),
+      ('10-12 ETAJLAR', 700, 'b0fe296e-750a-42ba-8fb4-c023fd306e73'),
+      ('13-15 ETAJLAR', 650, 'b0fe296e-750a-42ba-8fb4-c023fd306e73');
 
 
 
-
-INSERT INTO akay_city(building_name, building_location, company_id) VALUES
-('akay_city_mirzo_ulugbek', 'TASHKENT, MIRZO-ULUGBEK area, LASHKARBEGI street,', '4809dfd2-d1c1-4d42-a80f-cbd14a3dc376'),
-('akay_city_yunusobod', 'Yunusobod-14 Crystal market', '4809dfd2-d1c1-4d42-a80f-cbd14a3dc376');
 
 
 
