@@ -2,7 +2,7 @@ const { connection } = require("../config");
 const { Pool } = require("pg");
 
 const pool = new Pool({
-  connectionString: connection.connectionString,
+  connectionString: connection.connectionElString,
 });
 
 const fetch = async (SQL, ...params) => {

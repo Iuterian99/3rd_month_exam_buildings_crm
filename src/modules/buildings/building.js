@@ -1,15 +1,13 @@
-const {buildings} = require("./model");
+const { buildings } = require("./model");
 
 module.exports = {
-  getBuildings: async(req, res) => {
+  getBuildings: async (_, res) => {
     try {
-        let {company_id} = req.body
-
-        const allBuildings = await buildings(company_id)
-        res.json(allBuildings)
-    } catch(e) {
-        console.log(e.message)
-        res.json(e.message)
+      const allBuildings = await buildings();
+      res.json(allBuildings);
+    } catch (e) {
+      console.log(e.message);
+      res.json(e.message);
     }
-}
+  },
 };

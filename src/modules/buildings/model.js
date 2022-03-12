@@ -1,4 +1,4 @@
-const { fetch, fetchAll } = require("../../lib/postgres");
+const { fetchAll } = require("../../lib/postgres");
 
 const Buildings = `
 SELECT 

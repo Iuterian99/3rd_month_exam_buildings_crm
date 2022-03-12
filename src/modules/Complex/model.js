@@ -12,5 +12,5 @@ WHERE
 const buildings = (company_id) => fetchAll(Complexes, company_id);
 
 module.exports = {
-  Complexes,
+  buildings,
 };

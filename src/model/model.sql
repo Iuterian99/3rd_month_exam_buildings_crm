@@ -28,6 +28,17 @@ CREATE TABLE complex_houses (
     ON DELETE CASCADE
 );
 
+CREATE TABLE banks (
+  bank_id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
+  bank_name varchar(50) NOT NULL,
+  bank_credit_year int NOT NULL,
+  bank_credit_percent int NOT NULL
+);
+
+INSERT INTO banks(bank_name, bank_credit_year, bank_credit_percent) VALUES('NBU', 20, 13);
+INSERT INTO banks(bank_name, bank_credit_year, bank_credit_percent) VALUES('AgroBank', 15, 15);
+INSERT INTO banks(bank_name, bank_credit_year, bank_credit_percent) VALUES('HamkorBank', 20, 18);
+
 
 
 SELECT 
